@@ -3,15 +3,15 @@
   "releaseNotes": "Release 0.4.0",
   "platforms": {
     "linux": {
-      "url": "https://github.com/esabedo/veil-route/releases/download/v0.4.0/veilroute_0.4.0_amd64.deb",
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.4.0/veilroute_0.4.0_amd64.deb",
       "signature": "c205990299ef34a22f666baf8b0f08ceefce455db840a2230c3e0668d185b71c8a037b00f8ccbfa320ebc3d4f762acdf12dd2d3d3dedb7c56c40f62789088e00"
     },
     "macos": {
-      "url": "https://github.com/esabedo/veil-route/releases/download/v0.4.0/VeilRoute-v0.4.0-macos.pkg",
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.4.0/VeilRoute-v0.4.0-macos.pkg",
       "signature": "d5cbc2ec2bc0d8995f9bb18a77692be0971da23c9401b254e140d8499a7dba1740b43ce009e814b6ca3a70c3b50dbf6fd15d87dea10b1f9fcfeecf7ab03fc101"
     },
     "windows": {
-      "url": "https://github.com/esabedo/veil-route/releases/download/v0.4.0/VeilRoute-v0.4.0-windows-setup.exe",
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.4.0/VeilRoute-v0.4.0-windows-setup.exe",
       "signature": "fd8a4562bec6d008d0f349ff4505f6475f1116bb32afd2908617dc1ed17bb8b45e4cd875c3e6d4a4fde4de954e0c1dd4031f594bb8c3b39501132e518bafcb07"
     }
   }

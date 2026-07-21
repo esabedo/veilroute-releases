@@ -261,8 +261,8 @@
          app refuses to install a download whose signature does not match.</p>
       <p><strong>Update manifest.</strong> This site serves the manifest the app reads:</p>
       <p><code class="endpoint">https://esabedo.github.io/veilroute-releases/latest.json</code></p>
-      <p>Source code, release notes and checksums live in the
-         <a href="https://github.com/esabedo/veil-route">veil-route repository</a>.</p>
+      <p><strong>Checksums.</strong> SHA-256 sums for every artifact are listed on the
+         <a href="https://github.com/esabedo/veilroute-releases/releases/latest">release page</a>.</p>
     </section>
   </main>
 
@@ -309,7 +309,7 @@
       .catch(function () {
         // Offline or manifest unreachable: point people at the releases page
         // rather than leaving dead buttons behind.
-        var fallback = 'https://github.com/esabedo/veil-route/releases/latest';
+        var fallback = 'https://github.com/esabedo/veilroute-releases/releases/latest';
         document.getElementById('version').textContent = 'see GitHub';
         Object.keys(LABELS).forEach(function (key) {
           var link = document.querySelector('[data-dl="' + key + '"]');
