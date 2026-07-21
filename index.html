@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veil Route — Downloads</title>
+<meta name="description" content="Downloads and update manifest for Veil Route, a cross-platform VLESS + REALITY VPN/proxy client.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1240 1240'><rect width='1240' height='1240' rx='260' fill='%2310191B'/><path d='M360 297 545 372 545 858 360 955Z' fill='%234FA5A5'/><path d='M487 186 908 377 768 472 487 330Z' fill='%23A8D5D2'/><path d='M775 487 930 397 930 935 775 845Z' fill='%23F5F8F8'/></svg>">
+<style>
+  :root {
+    --bg: #10191B;
+    --surface: #162326;
+    --surface-2: #1B2C30;
+    --line: #263D42;
+    --primary: #46A7A2;
+    --primary-soft: #A8D5D2;
+    --text: #E6F0F0;
+    --muted: #8CA5A8;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.28);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #F2F7F8;
+      --surface: #FFFFFF;
+      --surface-2: #F7FBFB;
+      --line: #D7E4E7;
+      --primary: #256D85;
+      --primary-soft: #4E93A8;
+      --text: #10191B;
+      --muted: #5A737B;
+      --shadow: 0 1px 2px rgba(16,25,27,.06), 0 8px 24px rgba(16,25,27,.08);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Soft brand glow behind the hero. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: -30vh 0 auto 0;
+    height: 70vh;
+    background: radial-gradient(60% 60% at 50% 50%,
+                color-mix(in srgb, var(--primary) 16%, transparent), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 20px 72px;
+  }
+
+  /* ── Hero ─────────────────────────────────────────────── */
+  header { text-align: center; margin-bottom: 44px; }
+  .mark {
+    width: 92px; height: 92px;
+    display: block;
+    margin: 0 auto 22px;
+    border-radius: 21px;
+    box-shadow: var(--shadow);
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 2.85rem);
+    letter-spacing: -.02em;
+    font-weight: 650;
+  }
+  .tagline {
+    margin: 10px auto 0;
+    max-width: 46ch;
+    color: var(--muted);
+    font-size: 1.02rem;
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    padding: 6px 14px 6px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    font-size: .875rem;
+    color: var(--muted);
+  }
+  .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 22%, transparent);
+  }
+  .pill strong { color: var(--text); font-weight: 600; }
+
+  /* ── Downloads ────────────────────────────────────────── */
+  h2 {
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 14px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+  }
+  .card h3 { margin: 0; font-size: 1.06rem; font-weight: 620; }
+  .card .meta {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: .76rem;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+    margin-bottom: 14px;
+  }
+  .btn {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 9px;
+    background: var(--primary);
+    color: #06181A;
+    font-weight: 600;
+    font-size: .92rem;
+    text-decoration: none;
+    transition: filter .15s ease, transform .15s ease;
+  }
+  @media (prefers-color-scheme: light) { .btn { color: #FFFFFF; } }
+  .btn:hover { filter: brightness(1.08); }
+  .btn:active { transform: translateY(1px); }
+  .btn:focus-visible { outline: 2px solid var(--primary-soft); outline-offset: 3px; }
+  .btn[aria-disabled="true"] {
+    background: var(--surface-2);
+    color: var(--muted);
+    border: 1px solid var(--line);
+    pointer-events: none;
+  }
+  .btn svg { width: 15px; height: 15px; }
+
+  /* ── Info panel ───────────────────────────────────────── */
+  .panel {
+    margin-top: 40px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+  .panel p { margin: 0 0 14px; color: var(--muted); font-size: .93rem; }
+  .panel p:last-child { margin-bottom: 0; }
+  .panel strong { color: var(--text); font-weight: 600; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: .84em;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 2px 6px;
+  }
+  .endpoint { display: block; overflow-x: auto; white-space: nowrap; padding: 9px 11px; }
+  a { color: var(--primary); }
+  a:focus-visible { outline: 2px solid var(--primary-soft); outline-offset: 2px; border-radius: 3px; }
+
+  footer {
+    margin-top: 34px;
+    text-align: center;
+    color: var(--muted);
+    font-size: .85rem;
+  }
+  footer a { color: var(--muted); text-decoration-color: var(--line); }
+  footer a:hover { color: var(--text); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <!-- Veil Route mark: an open portal with a route running through it. Kept on
+         the brand tile so the white door panel stays legible in light mode too. -->
+    <svg class="mark" viewBox="0 0 1240 1240" role="img" aria-label="Veil Route logo">
+      <rect width="1240" height="1240" rx="272" fill="#10191B"/>
+      <path d="M360 297 545 372 545 858 360 955Z" fill="#4FA5A5"/>
+      <path d="M487 186 908 377 768 472 487 330Z" fill="#A8D5D2"/>
+      <path d="M775 487 930 397 930 935 775 845Z" fill="#F5F8F8"/>
+      <path d="M700 700c45 45-35 95-55 145-23 55-100 115-250 213h217c88-83 78-153 71-198-8-52 42-100 17-160Z" fill="#4FA5A5"/>
+    </svg>
+
+    <h1>Veil Route</h1>
+    <p class="tagline">A cross-platform VLESS&nbsp;+&nbsp;REALITY VPN and proxy client for
+       Linux, macOS and Windows.</p>
+
+    <div class="pill">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Latest release&nbsp; <strong id="version">…</strong></span>
+    </div>
+  </header>
+
+  <main>
+    <h2>Downloads</h2>
+    <div class="grid" id="downloads">
+      <article class="card">
+        <h3>Linux</h3>
+        <p class="meta" data-file="linux">Debian / Ubuntu package</p>
+        <a class="btn" data-dl="linux" href="#" aria-disabled="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12M7 11l5 5 5-5M4 21h16"/></svg>
+          Download&nbsp;.deb
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>macOS</h3>
+        <p class="meta" data-file="macos">Signed installer package</p>
+        <a class="btn" data-dl="macos" href="#" aria-disabled="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12M7 11l5 5 5-5M4 21h16"/></svg>
+          Download&nbsp;.pkg
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Windows</h3>
+        <p class="meta" data-file="windows">Setup executable</p>
+        <a class="btn" data-dl="windows" href="#" aria-disabled="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12M7 11l5 5 5-5M4 21h16"/></svg>
+          Download&nbsp;.exe
+        </a>
+      </article>
+    </div>
+
+    <section class="panel">
+      <p><strong>Verified updates.</strong> Veil Route checks for new versions in
+         <em>Settings → App updates</em>. Every artifact is signed with an Ed25519 key and the
+         app refuses to install a download whose signature does not match.</p>
+      <p><strong>Update manifest.</strong> This site serves the manifest the app reads:</p>
+      <p><code class="endpoint">https://esabedo.github.io/veilroute-releases/latest.json</code></p>
+      <p>Source code, release notes and checksums live in the
+         <a href="https://github.com/esabedo/veil-route">veil-route repository</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Veil Route is free software, licensed under the
+       <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3</a> or later.</p>
+  </footer>
+
+</div>
+
+<script>
+  // Read the same manifest the app consumes, so this page never goes stale:
+  // one signed release publish updates both the client and this page.
+  (function () {
+    var LABELS = { linux: '.deb', macos: '.pkg', windows: '.exe' };
+
+    fetch('latest.json', { cache: 'no-cache' })
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function (m) {
+        var version = m && m.version ? m.version : null;
+        var platforms = (m && m.platforms) || {};
+
+        if (version) {
+          document.getElementById('version').textContent = 'v' + version;
+          document.title = 'Veil Route v' + version + ' — Downloads';
+        }
+
+        Object.keys(LABELS).forEach(function (key) {
+          var entry = platforms[key];
+          var link = document.querySelector('[data-dl="' + key + '"]');
+          var meta = document.querySelector('[data-file="' + key + '"]');
+          if (!link || !entry || !entry.url) return;
+
+          link.href = entry.url;
+          link.removeAttribute('aria-disabled');
+          if (meta) {
+            meta.textContent = entry.url.split('/').pop();
+          }
+        });
+      })
+      .catch(function () {
+        // Offline or manifest unreachable: point people at the releases page
+        // rather than leaving dead buttons behind.
+        var fallback = 'https://github.com/esabedo/veil-route/releases/latest';
+        document.getElementById('version').textContent = 'see GitHub';
+        Object.keys(LABELS).forEach(function (key) {
+          var link = document.querySelector('[data-dl="' + key + '"]');
+          if (!link) return;
+          link.href = fallback;
+          link.removeAttribute('aria-disabled');
+        });
+      });
+  })();
+</script>
+</body>
+</html>
