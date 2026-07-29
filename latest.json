@@ -1,18 +1,18 @@
 {
-  "version": "0.5.0",
-  "releaseNotes": "Multi-protocol links and subscriptions: VLESS+TLS, Hysteria2, Trojan, Shadowsocks, VMess, SOCKS, WebSocket/gRPC/HTTPUpgrade transports, and subscription import with refresh.",
+  "version": "0.6.0",
+  "releaseNotes": "Desktop is off GPL: Xray (MPL-2.0) runs the VLESS family and hysteria (MIT) runs Hysteria2, both behind tun2socks with no password or UAC prompt. sing-box and iOS are gone; the licence is now proprietary.",
   "platforms": {
     "linux": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.5.0/veilroute_0.5.0_amd64.deb",
-      "signature": "2ca9d385ef5d677c70284af07bd081813cb37fcdee656d1716713b2b8789ed2244ceca39e5a82f4c2f8d0ca1933fb83182726f66822bbc331d403c1aeb218d0e"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.0/veilroute_0.6.0_amd64.deb",
+      "signature": "9c32b03ce0860a2d36f79d07a6b2d0de06816b5cd6e540354b185368dc4b9ecec213d4217a38f35e94a8365f8ce0d24f68734fc3d2ae1107b9bfe9980c8b7e02"
     },
     "macos": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.5.0/VeilRoute-v0.5.0-macos.pkg",
-      "signature": "38eeaf216e1a0d492930740de53f39817c008d426deddcc05cfb5845b6c2239ded577afe518a2427559756c87e4ec3712af2aee9224d529480ddb6bccf72c207"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.0/VeilRoute-v0.6.0-macos.pkg",
+      "signature": "64f3a3844b42cc4d5d70caf8dfca498e54b874cd2b4dbe628aeced587f219e0d080be44db39c3db226d2a29f069f13d058557e4b9056059e5463141ef560c709"
     },
     "windows": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.5.0/VeilRoute-v0.5.0-windows-setup.exe",
-      "signature": "a3be2130bbb9e9d125c3863bc555b97d496da5fb2714d3ff4492664ed49f2c8330f5a847d3b8138a2cb6dbe52ec41074de248175f1403600242c62f6a674c005"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.0/VeilRoute-v0.6.0-windows-setup.exe",
+      "signature": "8ea49e3febe83a4b204c0298534fca2dd53976d7454655e0e88c8e1320a7976861752ee88e414d83608f9658744f75bf343500882cd7dc7ada40f138cb076802"
     }
   }
 }
