@@ -1,18 +1,18 @@
 {
-  "version": "0.6.1",
-  "releaseNotes": "One field takes both profile and subscription links, subscriptions hold their own profiles, and a Hysteria2 link saves whatever the current settings are instead of being refused.",
+  "version": "0.6.2",
+  "releaseNotes": "Updates now show a progress bar while they download, and the macOS installer opens in front instead of silently behind the app.",
   "platforms": {
     "linux": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.1/veilroute_0.6.1_amd64.deb",
-      "signature": "8bbd9a72c21e6b994e552622fd7f825c89fbacd3910b93fd6feaa5237a333a2820e7ee1f298e2d3ec473ea8581738086fea31f4201fa026aca246d315392d509"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.2/veilroute_0.6.2_amd64.deb",
+      "signature": "430c22684e628e91f0153fb73ae316cd44ddf5c3b0b57f3c01c09ca17d082848e86e39693caa11e97a51c79f58784d76d7dcb3b2ea4d915edd6c77070353230a"
     },
     "macos": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.1/VeilRoute-v0.6.1-macos.pkg",
-      "signature": "3042d56e5f26150bb4873ea0ce7049def0c52b15284d30d037c9fac0e960d3e9dea012470b8964b24333551a1c40796f4a86fff7ce02d3571f3382514ba38e04"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.2/VeilRoute-v0.6.2-macos.pkg",
+      "signature": "d3a897fd61b00b83016366ab3e587db3ff7b525d947deee770d6decdb97b39e3021e8807dc9ab59c6bccf1f73cd3f5cd1c07d8a83fd3cb1b8ad57b18c5dd4c0e"
     },
     "windows": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.1/VeilRoute-v0.6.1-windows-setup.exe",
-      "signature": "fc476d60b4b7842f2d28c65adaf60cefabf27cf875c33052b349c730dd83ce34077f5dedd287ae5786c5d1742bf710212f438efb4ccd5081157ddba59798170f"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.2/VeilRoute-v0.6.2-windows-setup.exe",
+      "signature": "b33439ac198bada1eeb7bfd58b97a0f329ba6c18189735af6c8963dfa6ae09b0012d4dfed2a6095ad8862227a289cc643a83a2a2223ed90ead651aee3db0c406"
     }
   }
 }
