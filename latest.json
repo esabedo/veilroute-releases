@@ -1,18 +1,18 @@
 {
-  "version": "0.6.2",
-  "releaseNotes": "Updates now show a progress bar while they download, and the macOS installer opens in front instead of silently behind the app.",
+  "version": "0.6.3",
+  "releaseNotes": "Fixes three faults that could each stop the tunnel from working: a health check that spent the whole startup budget, a network probe that failed when another VPN client held the default route, and a reverse DNS lookup that flooded the tunnel with retries. Known limitation: domain bypass rules do nothing while the whole device is tunnelled.",
   "platforms": {
     "linux": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.2/veilroute_0.6.2_amd64.deb",
-      "signature": "430c22684e628e91f0153fb73ae316cd44ddf5c3b0b57f3c01c09ca17d082848e86e39693caa11e97a51c79f58784d76d7dcb3b2ea4d915edd6c77070353230a"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.3/veilroute_0.6.3_amd64.deb",
+      "signature": "af08af1f8708446ada4e6a17e11073f7c7fba68c82243f78980c117bc5a03f22068e5081e2d5b24fbb986fc88d8f9de5b2bbd66030a8f260b3fe42843adc420a"
     },
     "macos": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.2/VeilRoute-v0.6.2-macos.pkg",
-      "signature": "d3a897fd61b00b83016366ab3e587db3ff7b525d947deee770d6decdb97b39e3021e8807dc9ab59c6bccf1f73cd3f5cd1c07d8a83fd3cb1b8ad57b18c5dd4c0e"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.3/VeilRoute-v0.6.3-macos.pkg",
+      "signature": "03786b0723321d66831d89edbe970e02733380910a8f3030ed4414255f1e45c79e7aeb6fb9ee443828714f5e3ac5b0b24afc7ebb2b33044b5f893be8f567df01"
     },
     "windows": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.2/VeilRoute-v0.6.2-windows-setup.exe",
-      "signature": "b33439ac198bada1eeb7bfd58b97a0f329ba6c18189735af6c8963dfa6ae09b0012d4dfed2a6095ad8862227a289cc643a83a2a2223ed90ead651aee3db0c406"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.3/VeilRoute-v0.6.3-windows-setup.exe",
+      "signature": "e5b35525356d03fc38d93784b62bb459c4ca7443243591ffc766e614aee4eee46dbad79978de53eec40ecc0d17bd585db566be283d6b6291556472f4b5c57e08"
     }
   }
 }
