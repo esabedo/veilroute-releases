@@ -1,18 +1,18 @@
 {
-  "version": "0.6.3",
-  "releaseNotes": "Fixes three faults that could each stop the tunnel from working: a health check that spent the whole startup budget, a network probe that failed when another VPN client held the default route, and a reverse DNS lookup that flooded the tunnel with retries. Known limitation: domain bypass rules do nothing while the whole device is tunnelled.",
+  "version": "0.6.4",
+  "releaseNotes": "The full-device tunnel carries traffic again, and split tunnelling works under it: rules that keep traffic out of the tunnel send it out the physical interface, a bypass rule naming a zone works on the first try, and \"only selected\" connects again. FakeDNS is scoped to the names a rule routes into the tunnel, IPv6 is no longer drawn into a tunnel it cannot leave, latency is measured through the tunnel, and profiles moved to the main screen.",
   "platforms": {
     "linux": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.3/veilroute_0.6.3_amd64.deb",
-      "signature": "af08af1f8708446ada4e6a17e11073f7c7fba68c82243f78980c117bc5a03f22068e5081e2d5b24fbb986fc88d8f9de5b2bbd66030a8f260b3fe42843adc420a"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.4/veilroute_0.6.4_amd64.deb",
+      "signature": "01a402e09d84da10f22b6003450728df25fbe56fab4d3a75d1f734da2c720a3f0deaa696e8638aa357503620173907220a0c846fa648d69ed426a125ad7a2302"
     },
     "macos": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.3/VeilRoute-v0.6.3-macos.pkg",
-      "signature": "03786b0723321d66831d89edbe970e02733380910a8f3030ed4414255f1e45c79e7aeb6fb9ee443828714f5e3ac5b0b24afc7ebb2b33044b5f893be8f567df01"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.4/VeilRoute-v0.6.4-macos.pkg",
+      "signature": "e8af10e5a56720b9757149ea89e216cfe6704f5ed3f7f6d1ae247d6b1ab2a523a88dd0a604de104d30f9379f0d20f051d02b49dad152e6f7a683e433c6345907"
     },
     "windows": {
-      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.3/VeilRoute-v0.6.3-windows-setup.exe",
-      "signature": "e5b35525356d03fc38d93784b62bb459c4ca7443243591ffc766e614aee4eee46dbad79978de53eec40ecc0d17bd585db566be283d6b6291556472f4b5c57e08"
+      "url": "https://github.com/esabedo/veilroute-releases/releases/download/v0.6.4/VeilRoute-v0.6.4-windows-setup.exe",
+      "signature": "3d9bc15431cb0383c9710418ad1af49ff8ca35dc243b58051e9cdf82fa7ce0e273fd75dd389e4abd11f1ff653cbb27180a585f511a846e46429e62f57e4bc80a"
     }
   }
 }
